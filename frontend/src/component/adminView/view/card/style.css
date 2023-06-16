@@ -1,0 +1,93 @@
+/* .admin-card-container{
+    width: 90%; 
+    display: flex;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0.1em 0.1em 0.9em;
+    margin: auto;
+    padding: 0.3em;
+    height: 100%;
+    position: relative;
+    border-bottom: none;
+} */
+/* .admin-card-container .child{
+    margin: 0.2em auto;
+    padding: 0.2em;
+} */
+/* .admin-card-container .title{
+    width: 90%;
+    font-weight: bold;
+} */
+/* .admin-card-container .title>p{   
+    font-size: 1.7em;
+    padding: 0.2em;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+} */
+/* .admin-card-container .description {
+    width: 100%;
+} */
+/* .admin-card-container .description>p{
+    font-size: 1.4em;
+    margin: auto;
+    width: 90%;
+    padding: 0.3em;
+    text-align: justify;
+} */
+/* .admin-card-container .creator {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+} */
+/* .admin-card-container tr{
+    padding: 0.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+} */
+    /* .admin-card-container .creator .creatorName{
+        text-transform: capitalize;
+    } */
+
+
+.admin-card-container .view-button{
+    /* padding: 0.1em; */
+    font-size: 1.3em;
+    cursor: pointer;
+    background-color: rgb(251, 222, 192);
+}
+.admin-card-container .view-button:hover{
+    background-color: rgb(217, 255, 255);
+    /* font-size: 1.45em; */
+}
+/* 
+@media screen and (max-width: 1050px) {
+    .admin-card-container .title>p{
+        font-size: 1.5em;
+    }
+    .admin-card-container .description>p{
+        font-size: 1.3em; 
+    }
+    .admin-card-container .creator>p{
+        font-size: 1.1em;
+    }
+    .admin-card-container .button >i{
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width: 600px) {
+    .admin-card-container .title>p{
+        font-size: 1.3em;
+    }
+    .admin-card-container .description>p{
+        font-size: 1.1em; 
+    }
+    .admin-card-container .creator>p{
+        font-size: 0.9em;
+    }
+    .admin-card-container .button >i{
+        font-size: 1.1em;
+    }
+} */

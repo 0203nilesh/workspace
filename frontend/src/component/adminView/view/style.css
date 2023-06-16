@@ -1,0 +1,121 @@
+.admin-view-container{
+    width: 90%;
+    padding: 0.3em;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 0.3em;
+}
+.admin-view-container> .heading{
+    width: 95%;
+    display: flex;
+    margin: 0.3em auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3em;
+    gap: 0.5em;
+}
+.admin-view-container> .heading>p{
+    width: 85%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.9em;
+    text-decoration: underline;
+    padding: 0.3em;
+    /* text-shadow: 0.08em 0.04em 0.7em black; */
+    text-transform: capitalize;
+}
+.admin-view-container>.heading .admin-filter-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.3em;
+    /* position: relative; */
+    /* left: 35%; */
+}
+.admin-view-container >.heading .admin-filter-container> .date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4em;
+}
+.admin-view-container> .heading .admin-filter-container> .date> input{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4em;
+    padding: 0.3em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.admin-view-container>.heading .admin-filter-container> .date> input:hover{
+    background-color: rgb(255, 221, 118);
+}
+.admin-view-container>.heading .admin-filter-container .button{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    align-items: center;
+    padding: 0.2em;
+    border-radius: 5px;
+    /* height: 100%; */
+}
+.admin-view-container .admin-filter-container .button>i{
+    padding: 0.4em;
+    font-size: 1.1em;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(252, 239, 200);
+    /* height: 100%; */
+}
+.admin-view-container .admin-filter-container .button>i:hover{
+    background-color: rgb(255, 221, 118);
+}
+
+@media screen and (max-width :1050px) {
+    .admin-view-container> .heading{
+        flex-wrap: wrap ;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .admin-view-container> .heading>p{
+        font-size: 1.7em;
+    }
+    .admin-view-container> .heading .admin-filter-container> .date> input{
+        font-size: 1.2em;
+    }
+    .admin-view-container .admin-filter-container .button>i{
+        font-size: 1.1em;
+    }
+}
+@media screen and (max-width: 600px) {
+    .admin-view-container> .heading>p{
+        font-size: 1.4em;
+        width: 95%;
+    }
+    .admin-view-container> .heading .admin-filter-container> .date> input{
+        font-size: 1em;
+    }
+    .admin-view-container .admin-filter-container .button>i{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 450px) {
+    .admin-view-container{
+        width: 95%;
+    }
+    .admin-view-container .heading{
+        width: 100%;
+        margin: auto;
+    }
+    .admin-view-container > .heading >.admin-filter-container >p{
+        width: 100%;
+    }
+    td {
+        font-size: 15px;
+    }
+}

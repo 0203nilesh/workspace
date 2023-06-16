@@ -1,0 +1,16 @@
+.admin-main-container{
+    width: 70%;
+    margin: 0.5em auto;
+    display: flex;
+    align-items: flex-start;
+    border: 2px solid black;
+    gap: 0.5em;
+    padding: 0.5em;
+}
+
+@media screen and (max-width: 750px) {
+    .admin-main-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,91 @@
+.create-work-container{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    /* height: 450px; */
+    /* box-sizing: border-box; */
+    /* box-shadow: 0.2em 0.2em 1em   0.1em black; */
+}
+.create-work-container .create-work-form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.7em 0em;
+    padding: 0.4em 0em;
+}
+.create-work-container .create-work-form .child{
+    width: 90%;
+    margin: 0em auto;
+}
+.create-work-container .create-work-form> .heading{
+    display: flex;
+    padding: 0.3em;
+}
+.create-work-container .create-work-form> .heading> p{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0em auto;
+    padding: 0.2em;
+    font-size: 1.8em;
+}
+.create-work-container .create-work-form .title{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.create-work-container .create-work-form .title>input, label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+.create-work-container .create-work-form .title>input{
+    width: 90%;
+    padding: 0.2em;
+}
+.create-work-container .create-work-form .description{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin: auto;
+    gap: 0.1em;
+}
+.create-work-container .create-work-form .description>textarea,label{
+    padding: 0.3em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+.create-work-container .create-work-form .button{
+    margin: 0.4em auto;
+    display: flex;
+    width: 90%;
+    padding: 0.2em;
+}
+.create-work-container .create-work-form .button>button{
+    font-size: 1.4em;
+    padding: 0.3em;
+    margin: auto;
+    background-color: antiquewhite;
+    border-radius: 5%;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0.2em 0.2em 0.9em 0.1em black;
+    border-radius: 7px;
+}
+.create-work-container .create-work-form .button>button:hover{
+    background-color: rgba(240, 237, 234, 0.929);
+    box-shadow: 0.1em 0.1em 0.9em 0.1em black;
+}
+
+@media screen and (max-width: 850px) {
+    .create-work-container .create-work-form> .heading> p{
+        font-size: 1.5em;
+    }
+    .create-work-container .create-work-form .title>input, label{
+        font-size: 1em;
+    }
+    .create-work-container .create-work-form .button>button{
+        font-size: 1.2em;
+    }
+}

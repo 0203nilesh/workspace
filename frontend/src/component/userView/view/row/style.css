@@ -1,0 +1,11 @@
+.row-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.3em;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+.row-container> .no-data{
+    margin: 15% auto;
+}

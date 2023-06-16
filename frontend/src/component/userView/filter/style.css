@@ -1,0 +1,65 @@
+.filter-container{
+    /* width: 20%; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0.2em;
+    /* position: absolute; */
+    /* right: 10px; */
+}
+.filter-container .filter-form{
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.3em;
+    gap: 0.3em;
+}
+.filter-container .filter-form .child{
+    width: 95%;
+    margin: auto;
+}
+.filter-container .filter-form .heading{
+    font-size: 1.6em;
+    /* text-shadow: 0.1em 0.1em 0.9em  black; */
+    margin: auto;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.filter-container .filter-form .child>input,label{
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.filter-container .filter-form .date{
+    display: flex;
+    flex-direction: column;
+}
+.filter-container .filter-form .date>input{
+    cursor: pointer;
+    background-color: rgb(239, 239, 239);
+    padding: 0.2em;
+}
+.filter-container .filter-form .button{
+    display: flex;
+    padding: 0.2em;
+}
+.filter-container .filter-form .button>button{
+    margin: auto;
+    padding: 0.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.2em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
+@media screen and (max-wdith: 600px) {
+    .filter-container .filter-form .child>input,label{
+        font-size: 1em;
+    }
+    .filter-container .filter-form .button>button{
+        font-size: 1em;
+    }
+}

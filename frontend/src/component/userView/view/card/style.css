@@ -1,0 +1,86 @@
+.card-container{
+    min-width: 250px;
+    max-width: 250px;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0.1em 0.1em 0.9em;
+    padding: 0.3em;
+    flex-direction: column;
+    position: relative;
+}
+.card-container .child{
+    /* width: 90%; */
+    margin: 0.2em auto;
+    padding: 0.2em;
+}
+.card-container .title{
+    width: 90%;
+}
+.card-container .title>p{   
+    font-size: 1.4em;
+    padding: 0.2em;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.card-container .description {
+    width: 95%;
+}
+.card-container .description>p{
+    font-size: 1.2em;
+    margin: auto;
+    width: 90%;
+    padding: 0.3em;
+    text-align: justify;
+}
+.card-container .creator {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.card-container .creator>p{
+    font-size: 0.9em;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0.2em;
+    font-weight: bold;
+}
+.card-container> .button{
+    margin: 0em auto;
+    /* margin-top: 0em; */
+    width: 90%;
+    right: 5px;
+    padding: 0.2em;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card-container .button >i{
+    padding: 0.3em;
+    font-size: 1.4em;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(248, 244, 240);
+}
+.card-container .button>i:hover{
+    /* font-size: 1.45em; */
+    background-color: rgb(230, 225, 219);
+}
+
+@media screen and (max-width: 600px) {
+    .card-container .title>p{
+        font-size: 1.2em;
+    }
+    .card-container .description>p{
+        font-size: 1em;
+    }
+    .card-container .creator>p{
+        font-size: 0.7em;
+    }
+    .card-container .button >i{
+        font-size: 1.2em;
+    }
+}

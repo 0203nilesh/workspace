@@ -1,0 +1,114 @@
+.workView-container{
+    display: flex;
+    border: 2px solid black;
+    width: 50%;
+    margin: 2em auto;
+    flex-direction: column;
+    gap: 0.8em;
+    padding: 1em;
+}
+.workView-container>.child{
+    /* border: 2px solid black; */
+    padding: 0.3em;
+}
+.workView-container .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.workView-container .heading>p{
+    text-align: center;
+    font-size: 2em;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+.workView-container .description {
+    width: 80%;
+    margin: auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.workView-container .description> p{
+    /* width: 90%; */
+    text-align: justify;
+    /* padding: 1em; */
+    font-size: 1.3em;
+}
+.workView-container .creator {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+.workView-container .creator>p{
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.workView-container .button {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2em;
+}
+.workView-container .button>button{
+    cursor: pointer;
+    padding: 0.3em;
+    font-size: 1.4em;
+    background-color: rgb(223, 223, 230);
+    border-radius: 5px;
+    box-shadow: 0.1em 0.1em 0.8em rgb(121, 118, 118);
+}
+.workView-container .button>button:hover{
+    background-color: rgba(175, 175, 192, 0.913);
+}
+
+@media screen and (max-width: 650px) {
+    .workView-container{
+        width: 80%;
+        padding: 1.2em;
+    }
+    .workView-container .heading>p{
+        font-size: 1.6em;
+    }
+    .workView-container .description> p{
+        font-size: 1.2em;
+    }
+    .workView-container .creator>p{
+        font-size: 0.8em;
+    }
+    .workView-container .button>button{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 450px) {
+    .workView-container{
+        width: 80%;
+        padding: 1em;
+    }
+    .workView-container .heading>p{
+        font-size: 1.4em;
+    }
+    .workView-container .description{
+        width: 90%;
+    }
+    .workView-container .description> p{
+        font-size: 1em;
+    }
+    .workView-container .creator{
+        width: 90%;
+    }
+    .workView-container .creator>p{
+        font-size: 0.6em;
+    }
+    .workView-container .button>button{
+        font-size: 1.1em;
+    }
+}

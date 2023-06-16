@@ -1,0 +1,50 @@
+.view-container{
+    width: 74%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    border-radius: 15px;
+}
+.view-container> .heading{ 
+    padding: 0.3em;
+    /* margin: 2.3em; */
+    display: flex;
+    /* position: relative; */
+    justify-content: center;
+    align-items: center;
+}
+.view-container>.heading >p{
+    width: 85%;
+    font-size: 1.9em;
+    text-align: center;
+    padding: 0.3em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+    .view-container {
+        width: auto;
+    }
+    .view-container> .heading> p{
+        width: 50%;
+    }
+    .view-container>.heading >p{
+        width: 80%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    .view-container> .heading{
+        flex-direction: column;
+        padding: 1em;
+        gap: 0.5em;
+        position: sticky;
+    }
+    .view-container>.heading >p{
+        font-size: 1.7em;
+    }
+}
