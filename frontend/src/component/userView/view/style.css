@@ -1,6 +1,6 @@
 .view-container{
     width: 74%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     padding: 0.5em;
@@ -28,6 +28,7 @@
 @media screen and (max-width: 1000px) {
     .view-container {
         width: auto;
+        width: 100%;
     }
     .view-container> .heading> p{
         width: 50%;
@@ -38,6 +39,9 @@
     }
 }
 @media screen and (max-width: 600px) {
+    .view-container{
+        width: 100%;
+    }
     .view-container> .heading{
         flex-direction: column;
         padding: 1em;

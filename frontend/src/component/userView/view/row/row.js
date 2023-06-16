@@ -7,11 +7,20 @@ export default function Row({setUpdateData,setHeading}) {
   const {workDetails}= useSelector((state)=> state.work)
   // console.log(workDetails);  
   return (
-    <div className='row-container'>
+    <table className='row-container'>
+      <thead>
+        <td>Sr No.</td>
+        <td>Name</td>
+        <td>Date</td>
+        <td>Edit</td>
+        <td>View</td>
+        <td>Delete</td>
+      </thead>
+      <tbody>
       {!workDetails.message ? (<>
-        {workDetails.map((work)=>{
+        {workDetails.map((work, index)=>{
         return (<>
-          <Card key={work._id} setUpdateData={setUpdateData} data={work}  />
+          <Card key={work._id} setUpdateData={setUpdateData} sNo={index} data={work}  />
         </>)
       })}
       </>):(<>
@@ -20,6 +29,7 @@ export default function Row({setUpdateData,setHeading}) {
       <h1>No Work done</h1>
       </div>
       </>)}
-    </div>
+      </tbody>
+    </table>
   )
 }

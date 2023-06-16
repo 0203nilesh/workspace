@@ -1,5 +1,5 @@
 .row-container{
-    display: flex;
+    /* display: flex; */
     justify-content: space-around;
     align-items: center;
     padding: 0.3em;
@@ -8,4 +8,27 @@
 }
 .row-container> .no-data{
     margin: 15% auto;
+}
+.row-container> thead > td{
+    font-size: 18px;
+}
+.row-container> tbody> tr>  td{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+    .row-container> thead > td{
+        font-size: 15px;
+    }
+    .row-container> tbody> tr>  td{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .row-container> thead > td{
+        font-size: 12px;
+    }
+    .row-container> tbody> tr>  td{
+        font-size: 12px;
+    }
 }

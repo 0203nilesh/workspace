@@ -3,10 +3,10 @@
     /* justify-content: space-around; */
     /* align-items: center; */
     /* border: 2px solid black; */
-    width: 60%;
-    margin-left: 5%;
+    width: 90%;
+    margin: auto;
     padding: 0.5em;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 0.9em;
 }
 table> thead > td{
@@ -42,5 +42,10 @@ table, th, td {
 @media screen and (max-width: 1000px) {
     .admin-row-container{
         width: 100%;
+    }
+}
+@media screen and (max-width: 700px) {
+    table, th, td {
+        font-size: 17px;
     }
 }

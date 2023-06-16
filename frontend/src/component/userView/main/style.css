@@ -4,7 +4,7 @@
     justify-content: space-between;
     margin: 1em auto;
     align-items: flex-start;
-    width: 90%;
+    width: 95%;
     border: 2px solid black;
     gap: 1em;
     /* flex-wrap: wrap; */
@@ -14,5 +14,11 @@
     .main-container{
         flex-wrap: wrap-reverse;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-container{
+        width: 98%;
     }
 }
