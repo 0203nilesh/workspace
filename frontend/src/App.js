@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {BrowserRouter, Routes, Route, useNavigate, useLocation} from 'react-router-dom'
 import Home from './component/home/Home'
 import Navbar from './component/common/navbar/Navbar'
 import Footer from './component/common/footer/Footer'
@@ -13,6 +13,7 @@ import WorkView from './component/common/workView/WorkView'
 export default function App() {
   const [isLoading, setIsLoading]= useState(useSelector((state)=>state.loader.isLoading));
   // console.log(isLoading);
+  
   return (
     <>
     {isLoading? (<>
@@ -26,7 +27,7 @@ export default function App() {
       <Route path='/adminView' element={<AdminView/ >}/>
       <Route path='/workView/:id/:name' element={ <WorkView/> }  />
     </Routes>
-    <Footer/>
+    {/* <Footer/> */}
     </BrowserRouter>
       </>)}
     </>

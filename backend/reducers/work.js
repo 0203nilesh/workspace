@@ -10,7 +10,7 @@ export const get_all_work= async(req, res)=>{
         if(workData.length!==0){
             res.status(200).json(workData);
         }else{
-            res.status(200).json({message: "No Data Present", type: "warning"});
+            res.status(200).json([]);
         }
     } catch (error) {       
         // console.log(error);

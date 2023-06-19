@@ -1,10 +1,15 @@
 .signup-container{
     width: 50%;
     border: 2px solid black;
+    border-radius: 15px;
     display: flex;
     margin: 3em auto;
     flex-direction: column;
     padding: 1em;
+    box-shadow: 0px 0px 10px 1px black;
+}
+.signup-container:hover{
+    box-shadow: 0px 0px 10px 1px rgb(76, 140, 250);
 }
 .signup-container .signup-form{
     padding: 1em;
@@ -30,7 +35,7 @@
     font-family:'Times New Roman', Times, serif;
 }
 .signup-container .signup-form .inputs {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -40,6 +45,14 @@
 .signup-container .signup-form .inputs .input-child {
     margin: 0.3em;
     padding: 0.2em;
+}
+.signup-container .signup-form .inputs input:hover{
+    box-shadow: 0px 0px 5px 1px rgb(63, 24, 93);
+    cursor: pointer;
+    border-color:  transparent;
+}
+.signup-container .signup-form .inputs input:focus{
+    border-color:  white;
 }
 .signup-container .signup-form .inputs .name{
     display: flex;
@@ -116,10 +129,14 @@
     justify-content: center;
     align-items: center;
 }
+.signup-container .signup-form .buttons> button:hover{
+    box-shadow: 0px 0px 5px 1px rgb(52, 98, 172);
+    border-color: none;
+}
 .signup-container .signup-form .buttons>button{
     font-size: 1.5em;
     cursor: pointer;
-    padding: 0.2em;
+    padding: 0.3em 0.4em;
     background-color: rgb(250, 241, 229);
     font-family: 'Times New Roman', Times, serif;
 }
@@ -138,7 +155,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 .signup-container .signup-form .links>p:hover{
-    color: rgb(97, 97, 97);
+    color: rgb(58, 44, 135);
 }
 @media screen and (max-width: 800px) {
     .signup-container{

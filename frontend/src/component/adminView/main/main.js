@@ -5,8 +5,11 @@ import View from '../view/view';
 import { useDispatch } from 'react-redux';
 import {get_work_data} from '../../../action/work';
 import { get_student, get_students } from '../../../action/student';
+import { useNavigate } from 'react-router-dom';
 
 export default function Main() {
+  const navigate= useNavigate();
+  const authDate= JSON.parse(localStorage.getItem('auth'));
   const dispatch= useDispatch();
   const [id, setId]= useState("6472fd92414761305e79504f");
   useEffect(()=>{
@@ -16,10 +19,14 @@ export default function Main() {
   },[id])
   return (
     <>
-    <div className="admin-main-container">
+    {authDate===null? (navigate('/')):(
+      <>
+      <div className="admin-main-container">
         <User id={id} setId={setId} />
         <View />
     </div>
+      </>
+    )}
     </>
   )
 }

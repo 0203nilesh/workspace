@@ -7,6 +7,7 @@ dotenv.config();
 import authRoutes from './routes/auth.js';
 import studentRoutes from './routes/student.js';
 import workRoutes from './routes/work.js';
+import emailRoutes from './routes/email.js';
 
 const app= express();
 const port= process.env.PORT;
@@ -34,6 +35,7 @@ mongoose.connect(process.env.CONNECTION_URL)
 app.use("/auth/", authRoutes);
 app.use("/student/", studentRoutes);
 app.use("/work/", workRoutes);
+app.use("/email/", emailRoutes);
 
 app.listen(port, (err)=>{
     console.log(`Server is listening at port ${port}`);

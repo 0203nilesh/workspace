@@ -54,5 +54,7 @@ export const filter_work_data= (id,data)=>async(dispatch)=>{
         dispatch({type: SHOW_ALERT, data: {message: "filter applied", type: "success"}});
     }else{
         dispatch({type: SHOW_ALERT, data: filteredData});
+        dispatch({type: FETCH_ALL_WORK, data: []});
+
     }
 }

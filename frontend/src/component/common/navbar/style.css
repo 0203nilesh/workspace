@@ -34,6 +34,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.4em;
+    position: relative;
 }
 .nav-container .right-box>i{
     font-size: 2.4em;
@@ -54,6 +55,142 @@
     padding: 0.3em;
 }
 
+.nav-container .right-box  .show-box{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: absolute;
+    right: 10%;
+    top: 90%;
+    width:max-content;
+    z-index: 200;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+}
+.nav-container .right-box > .show-box> a{
+    padding: 4px;
+    margin: 3px;
+    color: white;
+    text-decoration: none;
+    /* border: 1px solid white; */
+    border-radius: 5px;
+}
+.nav-container .right-box > .show-box> a:hover{
+    box-shadow: 0px 0px 5px 1px rgb(106, 198, 255);
+}
+.add-email-icon{
+    position: relative;
+}
+.website-box{
+    right: 45% !important;
+}
+.add-email-box{
+    flex-direction: column;
+    display: flex;
+    position: absolute;
+    padding: 10px;
+    z-index: 100;
+    right: 65%;
+    top: 95%;
+    border-radius: 5px;
+    background-color: rgb(1, 1, 1);
+}
+.add-email-box > p{
+    font-size: 19px;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.add-email-box> input{
+    padding: 3px;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+.add-email-box> .email-button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+}
+.add-email-box> .email-button> i{
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+    font-size: 19px;
+    background-color: rgb(170, 172, 172);
+    color: white;
+}
+.add-email-box> .email-button> i:hover{
+    background-color: rgb(199, 203, 203);
+    color: black;
+    cursor: pointer;
+}
+.add-email-box> input:focus{
+    border-color: white;
+}
+.add-email-box> input:focus-visible{
+    border-color: white;
+}
+.add-email-box> input:hover{
+    border-color: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px;
+}
+@keyframes profileBox1 {
+    0% {
+        top: 40%;
+    }
+    25% {
+        top: 60%;
+    }
+    50% {
+        top: 70%;
+    }
+    75% {
+        top: 80%;
+    }
+    100%{
+        /* display: flex; */
+        top: 100%;
+    }
+}
+@keyframes profileBox1 {
+    0% {
+        top: 50%;
+    }
+    25% {
+        top: 60%;
+    }
+    50% {
+        top: 70%;
+    }
+    75% {
+        top: 80%;
+    }
+    100%{
+        top: 100%;
+    }
+}
+.nav-container .right-box> ul > li{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 3px;
+    color: white; 
+}
+.nav-container .right-box> ul >li > i{
+    margin-right: 5px;
+}
+.nav-container .right-box> ul > li:hover{
+    box-shadow: 0px 0px 5px 1px;
+    cursor: pointer;
+}
+.nav-container .right-box> .show-box> li{
+    font-size: 17px;
+}
 @media screen and (max-width: 1000px) {
     .nav-container .middle-box> p{
         font-size: 2em;

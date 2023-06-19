@@ -11,23 +11,23 @@ export default function Row() {
   // }
   return (
     <table className="admin-row-container">
-      <thead>
+      {workDetails.length===0? (<>
+      <p className="no-data">No Data found</p>
+      </>):(<>
+        <thead>
         <td>Sr No.</td>
         <td>Date</td>
         <td>Created By</td>
         <td>View</td>
       </thead>
-        {(workDetails.length!==0)?(<>
+        {(workDetails.length!==0) && (<>
           {workDetails?.map((work, index)=>{
             return(<>
             <Card data={work} srNo={index} key={work._id} />
             </>)
           })}
-        </>):(<>
-        <div className="no-data">
-          <p>No work updated yet!</p>
-        </div>
         </>)}
+      </>)}
     </table>
   )
 }

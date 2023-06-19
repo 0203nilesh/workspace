@@ -8,9 +8,12 @@ export default function Row({setUpdateData,setHeading}) {
   // console.log(workDetails);  
   return (
     <table className='row-container'>
-      <thead>
+      {workDetails.length===0? (<>
+        <p className="no-data">No Data</p>
+      </>): (<>
+        <thead>
         <td>Sr No.</td>
-        <td>Name</td>
+        {/* <td>Name</td> */}
         <td>Date</td>
         <td>Edit</td>
         <td>View</td>
@@ -30,6 +33,7 @@ export default function Row({setUpdateData,setHeading}) {
       </div>
       </>)}
       </tbody>
+      </>)}
     </table>
   )
 }

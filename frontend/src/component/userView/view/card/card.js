@@ -18,11 +18,11 @@ export default function Card({data, setUpdateData, sNo}) {
         </div> */}
         {/* <div className="creator child"> */}
             <td>{sNo+1}</td>
-            <td>{authData.name}</td>
+            {/* <td>{authData.name}</td> */}
             <td>{data.createdOn}</td>
         {/* </div> */}
         {/* <div className="button child "> */}
-        <td className='button'  onClick={()=>{
+        <td className='button'   onClick={()=>{
           setUpdateData(data)
           // console.log("here");
         }}>
@@ -31,7 +31,7 @@ export default function Card({data, setUpdateData, sNo}) {
         <td className='button' onClick={()=>{
           navigate(`/workView/${data._id}/${authData?.name}`);
         }}>
-        <i  class="fa-solid fa-expand"></i>
+        <i  className="fa-solid fa-expand"></i>
         </td>
         <td className='button' onClick={()=>{
               dispatch(delete_work_data(data._id));

@@ -7,6 +7,14 @@ const authSchema= new mongoose.Schema({
     email: {
         type: String,
     },
+    website: {
+        type: String,
+        default: "",
+    },
+    google: {
+        type: String,
+        default: "",
+    },
     user: {
         type: String,
     },

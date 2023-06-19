@@ -14,10 +14,10 @@ export default function WorkView() {
         dispatch(get_single_work(id));
     }, [])
     const {workData}= useSelector((state)=> state.work);
-    // console.log(id, name);
   return (
     <>
-    <div className="workView-container">
+    {authData===null? (navigate('/')): (<>
+        <div className="workView-container">
         <div className="heading child">
             <p> {workData?.title} </p>
         </div>
@@ -38,6 +38,7 @@ export default function WorkView() {
             }} >Back</button>
         </div>
     </div>
+    </>)}
     </>
   )
 }

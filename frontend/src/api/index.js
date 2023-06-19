@@ -52,6 +52,30 @@ export const filter_work= async(id, data)=>{
     // console.log(filteredData);
     return filteredData.data;
 }
+
+// email adding and removing
+export const addEmail= async(email)=>{
+    const emailReponse= await API.post('/email/add', {email: email});
+    return emailReponse.data;
+}
+export const removeEmail= async(email)=>{
+    const emailReponse= await API.post('/email/remove', {email: email});
+    return emailReponse.data;
+}
+//adding website and removing 
+export const addWebsite= async(id, website)=>{
+    const websiteResponse = await API.post(`/auth/website/add/${id}`,{website: website} );
+    return websiteResponse.data;
+}
+export const addGoogle= async(id, google)=>{
+    const googleResponse = await API.post(`/auth/google/add/${id}`,{google: google} );
+    console.log(googleResponse.data);
+    return googleResponse.data;
+}
+export const getUser= async(id)=>{
+    const gettingUser= await API.get(`/auth/user/${id}`);
+    return gettingUser.data;
+}
             
 // export const get_work_data= (id)=>API.get(`/work/${id}`);
 // export const get_students= ()=> API.get("/student/get");

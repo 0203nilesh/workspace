@@ -16,21 +16,21 @@ export default function User({id, setId}) {
     <>
     <div className="user-container">
         <div className="heading child">
-            <p>All Student's list</p>
+            <p>Students</p>
         </div>
         <div className="userList child">
             {studentList!==null?(<>
             {studentList.map((student)=>{
               if(id===student?._id  || student?._id===studentData?._id ){
                 return (<>
-                <p onClick={()=>{
+                <p key={student._id} onClick={()=>{
                   setId(student._id);
                 }} style={{backgroundColor: "rgb(98 120 192)", color: "white"}} > {student.name} </p>
                   </>)
               }else{
                 return(
                     <>
-                <p onClick={()=>{
+                <p key={student._id} onClick={()=>{
                   setId(student._id);
                 }} > {student.name} </p>
                 </>)
